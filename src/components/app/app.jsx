@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 import GenreQuestionScreen from '../genre-question-screen/genre-question-screen.jsx';
+import ArtistQuestionScreen from '../artist-question-screen/artist-question-screen.jsx';
 
 class App extends React.PureComponent {
   static getScreen(question, props, onUserAnswer) {
@@ -14,10 +15,21 @@ class App extends React.PureComponent {
       />;
     }
     const {questions} = props;
-    return <GenreQuestionScreen
-      question = {questions[question]}
-      onAnswer = {onUserAnswer}
-    />;
+    const currentQuestion = questions[question];
+
+    switch (currentQuestion.type) {
+      case `genre`: return <GenreQuestionScreen
+        screenIndex = {question}
+        question = {questions[question]}
+        onAnswer = {onUserAnswer}
+      />;
+      case `artist`: return <ArtistQuestionScreen
+        screenIndex = {question}
+        question = {questions[question]}
+        onAnswer = {onUserAnswer}
+      />;
+    }
+    return null;
   }
   constructor(props) {
     super(props);
@@ -31,9 +43,14 @@ class App extends React.PureComponent {
     const {gameTime, errorCount, questions} = this.props;
     const {question} = this.state;
     return App.getScreen(question, this.props, () => {
-      this.setState((prevState) => ({
-        question: prevState.question + 1,
-      }));
+      this.setState((prevState) => {
+        const nextIndex = prevState.question + 1;
+        const isEnd = nextIndex >= questions.length;
+        return {
+          ...prevState,
+          question: !isEnd ? nextIndex : -1,
+        };
+      });
     });
   }
 }
