@@ -4,19 +4,19 @@ const questions = [
     genre: `rock`,
     answers: [
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `rock`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `pop`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `http://myinstants.com/media/sounds/correct.swf.mp3`,
         genre: `jazz`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `http://myinstants.com/media/sounds/correct.swf.mp3`,
         genre: `rock`,
       },
     ],
@@ -26,19 +26,19 @@ const questions = [
     genre: `folk`,
     answers: [
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `rock`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `pop`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `jazz`,
       },
       {
-        src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+        src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
         genre: `rock`,
       },
     ],
@@ -47,7 +47,7 @@ const questions = [
     type: `artist`,
     song: {
       artist: `Jim Beam`,
-      src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+      src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
     },
     answers: [
       {
@@ -68,7 +68,7 @@ const questions = [
     type: `artist`,
     song: {
       artist: `Jack Daniels`,
-      src: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Uganda_flag_and_national_anthem_-_Oh_Uganda_Land_o.ogg`,
+      src: `https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3`,
     },
     answers: [
       {
