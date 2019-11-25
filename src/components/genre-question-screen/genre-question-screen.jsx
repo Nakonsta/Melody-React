@@ -6,8 +6,12 @@ class GenreQuestionScreen extends React.PureComponent {
   constructor(props) {
     super(props);
 
+    const {question} = this.props;
+    const {answers} = question;
+
     this.state = {
       activePlayer: -1,
+      userAnswer: new Array(answers.length).fill(false),
     };
   }
 
@@ -75,7 +79,8 @@ GenreQuestionScreen.propTypes = {
     type: PropTypes.oneOf([`genre`, `artist`]).isRequired,
   }).isRequired,
   onAnswer: PropTypes.func.isRequired,
-  screenIndex: PropTypes.number
+  screenIndex: PropTypes.number,
+  answers: PropTypes.array.isRequired,
 };
 
 export default GenreQuestionScreen;
