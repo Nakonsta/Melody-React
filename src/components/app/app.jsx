@@ -1,8 +1,14 @@
 import React from 'react';
+//import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import WelcomeScreen from '../welcome-screen/welcome-screen.jsx';
 import GenreQuestionScreen from '../genre-question-screen/genre-question-screen.jsx';
 import ArtistQuestionScreen from '../artist-question-screen/artist-question-screen.jsx';
+
+const Type = {
+  ARTIST: `game--artist`,
+  GENRE: `game--genre`,
+}
 
 class App extends React.PureComponent {
   static getScreen(question, props, onUserAnswer) {
